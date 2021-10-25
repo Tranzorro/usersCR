@@ -11,6 +11,16 @@ def default():
 def newUser():
     return render_template("new.html")
 
+@app.route('/show', methods=["POST"])
+def showUser():
+    pass
+@app.route('/edit', methods=["POST"])
+def editUser():
+    pass
+@app.route('/delete', methods=["POST"])
+def deleteUser():
+    pass
+
 @app.route('/create_user', methods=["POST"])
 def create_user():
     data = {
